@@ -1,0 +1,28 @@
+{
+  "Index": {
+    "title": "啊哈一下",
+    "switchLocale": "EN",
+    "deployWiki": "部署自己的网站？",
+    "description2": "生成你的周报",
+    "slogan": "写 周报 头大？我来帮你！",
+    "step0": "粘贴你的 OpenAI API Key",
+    "openaiApiKeyPlaceholder": "sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "step1": "简单描述一下你的周报内容",
+    "helpPageLink": "(点击这里查看教程)",
+    "placeholder": "比如：修复了客户端重复更新问题，梳理设计xxxx冲刺，负责跟进运营平台应用市场研发进度。",
+    "step2": "选择输出结果的形式。",
+    "simplifierButton": "生成周报",
+    "simplifiedContent": "优化后的内容",
+    "privacyPolicy1": "请勿上传过于隐私的内容，详情查看",
+    "privacyPolicy2": "《隐私声明》",
+    "paragraphForm": "段落",
+    "prompt": "请帮我把以下的工作内容填充为一篇完整的周报,用 markdown 格式以分点叙述的形式输出::{description}",
+    "outlineForm": "大纲",
+    "pasteButton": "粘贴",
+    "clearButton": "清空",
+    "notice": "现在访问量激增服务会不稳定，可以先收藏此网站，闲时再用，大家太热情了，随手发布的项目收获到了远超预想的关注。",
+    "copyToast": "周报 复制到剪贴板",
+    "timeout": "请求超时，请重试"
+  }
+}
+
