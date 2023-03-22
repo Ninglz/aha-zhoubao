@@ -163,9 +163,9 @@ const Home: NextPage = () => {
           height={50}
           onClick={showModal}
         />
-        <Modal title="关注公众号" className='text-center flex justify-center items-center' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}
+        <Modal title="关注我，了解更多" className='text-center flex justify-center items-center' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}
         footer={[]}>
-        <img src="/qrcode.webp" className='sm:w-15 sm:h-15'/>
+        <img src="/erweima.png" width={220}/>
         </Modal>
         </div>
         <h1 className='sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900 dark:text-white'>
