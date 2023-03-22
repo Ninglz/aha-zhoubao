@@ -47,7 +47,7 @@ export async function OpenAIStream(payload: ChatGPTCompletionRequest) {
   }
 
   const res = await fetch(
-    'https://openai.api.asdo.cn/v1' +
+    'https://api.openai.com/v1' +
       (isTurboModel(payload.model) ? '/chat/completions' : '/completions'),
     {
       headers: {
