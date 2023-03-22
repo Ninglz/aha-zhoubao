@@ -16,11 +16,6 @@ const ThemeSwitch = () => {
   }
 
   return (
-    // <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-    //   <option value="system">System</option>
-    //   <option value="dark">Dark</option>
-    //   <option value="light">Light</option>
-    // </select>
 
     <button aria-label="Toggle Dark Mode" type="button" className="h-10 w-10 rounded p-2 transition-colors dark:hover:bg-gray-800 sm:h-12 sm:w-12 sm:p-3" onClick={(e) => setTheme(activeTheme)}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="text-gray-900 transition-colors dark:text-gray-100">

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslations } from 'next-intl'
 import Github from './GitHub'
+import { useTheme } from "next-themes";
 import ThemeSwitch from './ThemeSwitch'
 
 
@@ -10,13 +11,16 @@ export default function Header() {
   const t = useTranslations('Index')
   const { locale, locales, route } = useRouter()
   const otherLocale = locales?.find((cur) => cur !== locale)
+  const { theme, setTheme } = useTheme();
+
+  const facicon = theme==='dark'?"/icon-dark.png":"/icon.png"
 
   return (
-    <header className='flex justify-between items-center w-full mt-5 border-b-2 pb-7 sm:px-4 px-2'>
+    <header className='flex justify-between items-center w-full mt-5 border-b-2 pb-0 sm:px-4 px-2'>
       <Link href='/' className='flex space-x-3'>
         <Image
           alt='header text'
-          src='/icon.png'
+          src={facicon}
           className='sm:w-12 sm:h-12 w-8 h-8'
           width={50}
           height={50}
@@ -27,7 +31,7 @@ export default function Header() {
       </Link>
       <div className='flex gap-2'>
         {otherLocale && (
-          <div className='relative font-medium text-black-600 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:bg-indigo-600 before:transition hover:before:scale-x-100'>
+          <div className='relative font-medium text-black-600 before:absolute before:-bottom-0 before:h-0.5 before:w-full before:scale-x-0 before:bg-indigo-600 before:transition hover:before:scale-x-100'>
             {/* <Link href={route} locale={otherLocale}>
               {t('switchLocale', { locale: otherLocale })}
             </Link> */}

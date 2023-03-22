@@ -129,10 +129,10 @@ const Home: NextPage = () => {
       <main
         className={`flex flex-1 w-full flex-col items-center justify-center px-4 mt-12`}
       >
-        {/* <div className='flex items-center justify-center mb-5'>
+        <div className='flex items-center justify-center mb-5'>
           <a
             className='flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mr-3'
-            href='https://github.com/ycjcl868/readme-gpt'
+            href='https://github.com/Ninglz/aha-zhoubao'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
               size={32}
             />
           </TwitterShareButton>
-        </div> */}
+        </div>
         <h1 className='sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900 dark:text-white'>
           <div className='px-4 py-2 sm:mt-3 mt-8 w-full' />
           <Balancer>{t('description2')}</Balancer>
@@ -182,12 +182,12 @@ const Home: NextPage = () => {
             value={chat}
             onChange={(e) => setChat(e.target.value)}
             rows={4}
-            className='w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-2 dark:text-black'
+            className='w-full rounded-md shadow-sm border-black focus:ring-black my-2 dark:text-black'
           />
 
           {!loading && (
             <button
-              className={`rounded-xl font-medium px-4 py-2 sm:mt-10 mt-8 w-full ${
+              className={`rounded-xl font-medium px-4 py-2 sm:mt-10 mt-8 w-full dark:bg-gray-100 dark:text-black ${
                 disabled
                   ? 'cursor: not-allowed bg-[#fafafa] border border-[#eaeaea] text-[#888] filter grayscale'
                   : 'bg-black text-white hover:bg-black/80'

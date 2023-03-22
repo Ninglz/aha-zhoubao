@@ -1,13 +1,13 @@
 {
   "Index": {
-    "title": "啊哈一下",
+    "title": "啊哈-周报生成器",
     "switchLocale": "EN",
     "deployWiki": "部署自己的网站？",
-    "description2": "生成你的周报",
+    "description2": "快速生成你的周报",
     "slogan": "写 周报 头大？我来帮你！",
     "step0": "粘贴你的 OpenAI API Key",
     "openaiApiKeyPlaceholder": "sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "step1": "简单描述一下你的周报内容",
+    "step1": "简单描述你的周报内容",
     "helpPageLink": "(点击这里查看教程)",
     "placeholder": "比如：修复了客户端重复更新问题，梳理设计xxxx冲刺，负责跟进运营平台应用市场研发进度。",
     "step2": "选择输出结果的形式。",
