@@ -13,12 +13,13 @@ export default function Header() {
   const otherLocale = locales?.find((cur) => cur !== locale)
   const { theme, setTheme } = useTheme();
 
-  const facicon = theme==='dark'?"/icon-dark.png":"/icon.png"
+  console.log(theme)
+  const facicon = theme==='light'?"/icon.png":"/icon-dark.png"
 
   return (
     <header className='flex justify-between items-center w-full mt-5 border-b-2 pb-0 sm:px-4 px-2'>
       <Link href='/' className='flex space-x-3'>
-        <Image
+        <img
           alt='header text'
           src={facicon}
           className='sm:w-12 sm:h-12 w-8 h-8'

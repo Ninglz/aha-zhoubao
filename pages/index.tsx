@@ -11,7 +11,6 @@ import { marked } from 'marked'
 import Footer from '../components/Footer'
 import Github from '../components/GitHub'
 
-import TwitterIcon from '../components/TwitterIcon'
 import Header from '../components/Header'
 import LoadingDots from '../components/LoadingDots'
 import ResizablePanel from '../components/ResizablePanel'
@@ -168,15 +167,6 @@ const Home: NextPage = () => {
         footer={[]}>
         <img src="/qrcode.webp" className='sm:w-15 sm:h-15'/>
         </Modal>
-          <TwitterShareButton
-            url={'https://readme.rustc.cloud/'}
-            hashtags={['chatgpt', 'readme', 'github']}
-          >
-            {/* <TwitterIcon
-              className='fill-[#00aced] opacity-100 hover:opacity-80 transition-opacity'
-              size={32}
-            /> */}
-          </TwitterShareButton>
         </div>
         <h1 className='sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900 dark:text-white'>
           <div className='px-4 py-2 sm:mt-3 mt-8 w-full' />
