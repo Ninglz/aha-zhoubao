@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+
+/utils/OpenAIStream.ts
 # testing
 /coverage
 
