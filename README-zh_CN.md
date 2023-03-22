@@ -1,6 +1,6 @@
-# :rocket: GPT - Github README 自动生成工具
+# :rocket: GPT - Github 周报生成器
 
-GPT 是一款使用 Vercel 和 Next.js 构建的 Github README 自动生成工具。它可以帮助你轻松创建出引人注目的 README 文件，增强你的项目，提高项目展示度。
+啊哈周报生成器 是一款使用 OpenAI 和 Next.js 构建的 Github README 自动生成工具。它可以帮助你轻松创建出引人注目的 README 文件，增强你的项目，提高项目展示度。
 
 ## :star2: 优势
 
