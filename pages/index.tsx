@@ -16,6 +16,7 @@ import Header from '../components/Header'
 import LoadingDots from '../components/LoadingDots'
 import ResizablePanel from '../components/ResizablePanel'
 import { fetchWithTimeout } from '../utils/fetchWithTimeout'
+import { Button, Modal } from 'antd';
 
 const useUserKey = process.env.NEXT_PUBLIC_USE_USER_KEY === 'true'
 const useNotice = process.env.NEXT_NOTICE === 'true'
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
   const [chat, setChat] = useState(t('placeholder'))
   const [api_key, setAPIKey] = useState('')
   const [generatedChat, setGeneratedChat] = useState<String>('')
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   console.log('Streamed response: ', generatedChat)
   console.log('locale', locale)
@@ -112,6 +114,21 @@ const Home: NextPage = () => {
 
   const disabled = !chat
 
+ 
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+
   return (
     <div className='flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen'>
       <Head>
@@ -139,14 +156,26 @@ const Home: NextPage = () => {
             <Github />
             <p>Star on GitHub</p>
           </a>
+          <Image
+          alt='WeChat qc'
+          src="/wechat-seeklogo.com.svg"
+          className='sm:w-8 sm:h-8 w-8 h-8 '
+          width={50}
+          height={50}
+          onClick={showModal}
+        />
+        <Modal title="关注公众号" className='text-center flex justify-center items-center' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}
+        footer={[]}>
+        <img src="/qrcode.webp" className='sm:w-15 sm:h-15'/>
+        </Modal>
           <TwitterShareButton
             url={'https://readme.rustc.cloud/'}
             hashtags={['chatgpt', 'readme', 'github']}
           >
-            <TwitterIcon
+            {/* <TwitterIcon
               className='fill-[#00aced] opacity-100 hover:opacity-80 transition-opacity'
               size={32}
-            />
+            /> */}
           </TwitterShareButton>
         </div>
         <h1 className='sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900 dark:text-white'>
