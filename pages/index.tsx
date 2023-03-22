@@ -232,7 +232,7 @@ const Home: NextPage = () => {
               {t('privacyPolicy1')}
               <a
                 className='text-blue-200 hover:text-blue-400'
-                href='https://github.com/ycjcl868/readme-gpt/blob/main/privacy.md'
+                href='https://github.com/Ninglz/aha-zhoubao/blob/main/privacy.md'
                 target='_blank'
                 rel='noopener noreferrer'
               >

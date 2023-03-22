@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "啊哈-周报生成器",
-    "switchLocale": "EN",
+    "switchLocale": "en",
     "deployWiki": "部署自己的网站？",
     "description2": "快速生成你的周报",
     "slogan": "写 周报 头大？我来帮你！",
@@ -16,7 +16,7 @@
     "privacyPolicy1": "请勿上传过于隐私的内容，详情查看",
     "privacyPolicy2": "《隐私声明》",
     "paragraphForm": "段落",
-    "prompt": "请帮我把以下的工作内容填充为一篇完整的周报,用 markdown 格式以分点叙述的形式输出::{description}",
+    "prompt": "请帮我把以下的工作内容填充为一篇完整的周报,用 markdown 格式以分点叙述的形式输出，标题适当加一些 emoji 表情:{description}",
     "outlineForm": "大纲",
     "pasteButton": "粘贴",
     "clearButton": "清空",

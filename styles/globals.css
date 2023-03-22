@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind dark-mode;
+
+@layer base{
+    body {
+        @apply dark:bg-gradient-to-r from-black to-slate-900  bg-white
+    }
+}

@@ -5,17 +5,26 @@ import { useTranslations } from 'next-intl'
 import Github from './GitHub'
 import { useTheme } from "next-themes";
 import ThemeSwitch from './ThemeSwitch'
+import { useEffect, useState } from "react";
 
 
 export default function Header() {
   const t = useTranslations('Index')
   const { locale, locales, route } = useRouter()
   const otherLocale = locales?.find((cur) => cur !== locale)
-  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const {systemTheme, theme, setTheme } = useTheme();
+ 
 
-  console.log(theme)
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
+  if (!mounted) {
+    return null;
+  }
   const facicon = theme==='light'?"/icon.png":"/icon-dark.png"
-
   return (
     <header className='flex justify-between items-center w-full mt-5 border-b-2 pb-0 sm:px-4 px-2'>
       <Link href='/' className='flex space-x-3'>
