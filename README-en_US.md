@@ -1,5 +1,6 @@
 # 📊 Aha Weekly Report Generator
 [中文版](./README.md)
+
 The Aha Weekly Report Generator is a tool for generating weekly reports built using OpenAI and Next.js. It can help you create a weekly report file that satisfies your leader easily and quickly, thus improving work efficiency.
 
 ## Advantages
